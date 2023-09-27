@@ -75,7 +75,7 @@ require (
 	golang.org/x/text v0.9.0 // indirect
 	golang.org/x/tools v0.9.1 // indirect
 	google.golang.org/genproto v0.0.0-20230306155012-7f2fa6fef1f4 // indirect
-	google.golang.org/grpc v1.54.1 // indirect
+	google.golang.org/grpc v1.53.0 // indirect
 	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c // indirect
 	gopkg.in/fsnotify.v1 v1.4.7 // indirect
 	gopkg.in/tomb.v1 v1.0.0-20141024135613-dd632973f1e7 // indirect
@@ -86,4 +86,4 @@ require (
 
 // This can be removed once etcd becomes go gettable, version 3.4 and 3.5 is not,
 // see https://github.com/etcd-io/etcd/issues/11154 and https://github.com/etcd-io/etcd/issues/11931.
-replace google.golang.org/grpc => google.golang.org/grpc v1.27.1
+replace google.golang.org/grpc => google.golang.org/grpc v1.26.0

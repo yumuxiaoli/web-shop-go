@@ -7,7 +7,7 @@ type MysqlConfig struct {
 	User     string `json:"user"`
 	Pwd      string `json:"pwd"`
 	Database string `json:"database"`
-	Port     int64  `json:"port"`
+	Port     string `json:"port"`
 }
 
 // 获取mysql 的配置
