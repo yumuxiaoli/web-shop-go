@@ -31,8 +31,8 @@ func main() {
 	db.SingularTable(true)
 
 	// 只执行一次
-	rp := repository.NewUserRepository(db)
-	rp.InitTable()
+	// rp := repository.NewUserRepository(db)
+	// rp.InitTable()
 
 	UserDataService := sr2.NewUserDataService(repository.NewUserRepository(db))
 	// Register handler
