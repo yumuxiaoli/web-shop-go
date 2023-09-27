@@ -1,11 +1,11 @@
-# User Service
+# User1 Service
 
-This is the User service
+This is the User1 service
 
 Generated with
 
 ```
-micro new user
+micro new user1
 ```
 
 ## Usage
