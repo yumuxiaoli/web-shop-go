@@ -25,20 +25,20 @@ type CartDataService struct {
 	CartRepository repository.ICartRepository
 }
 
-func (u *CartDataService) AddCart(Cart *model.Cart) (int64, error) {
-	return u.CartRepository.CreateCart(Cart)
+func (u *CartDataService) AddCart(cart *model.Cart) (int64, error) {
+	return u.CartRepository.CreateCart(cart)
 }
 
-func (u *CartDataService) DeleteCart(CartID int64) error {
-	return u.CartRepository.DeleteCartByID(CartID)
+func (u *CartDataService) DeleteCart(cartID int64) error {
+	return u.CartRepository.DeleteCartByID(cartID)
 }
 
-func (u *CartDataService) UpdataCart(Cart *model.Cart) (err error) {
-	return u.CartRepository.UpdataCart(Cart)
+func (u *CartDataService) UpdataCart(cart *model.Cart) (err error) {
+	return u.CartRepository.UpdataCart(cart)
 }
 
-func (u *CartDataService) FindCartByID(CartID int64) (*model.Cart, error) {
-	return u.CartRepository.FindCartByID(CartID)
+func (u *CartDataService) FindCartByID(cartID int64) (*model.Cart, error) {
+	return u.CartRepository.FindCartByID(cartID)
 }
 
 func (u *CartDataService) FindAllCart(userID int64) ([]model.Cart, error) {
