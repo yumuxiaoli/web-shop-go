@@ -8,15 +8,15 @@ init:
 
 .PHONY: api
 api:
-	protoc --openapi_out=. --proto_path=. proto/category.proto
+	protoc --openapi_out=. --proto_path=. proto/cart.proto
 
 .PHONY: proto
 proto:
-	protoc --proto_path=. --micro_out=. --go_out=:. proto/category.proto
+	protoc --proto_path=. --micro_out=. --go_out=:. proto/cart.proto
 	
 .PHONY: build
 build:
-	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o category *.go
+	go build -o cart *.go
 
 .PHONY: test
 test:
@@ -24,4 +24,4 @@ test:
 
 .PHONY: docker
 docker:
-	docker build . -t category:latest
+	docker build . -t cart:latest

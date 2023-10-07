@@ -52,7 +52,7 @@ func main() {
 	// 禁止复表
 	db.SingularTable(true)
 
-	repository.NewProductRepository(db).InitTable()
+	// repository.NewProductRepository(db).InitTable()
 
 	ProductDataService := sr2.NewProductDataService(repository.NewProductRepository(db))
 
