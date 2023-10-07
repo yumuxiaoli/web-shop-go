@@ -1,46 +1,87 @@
 # web-shop-go
-golang微服务
+微服务商城项目
 
-```go
+代码结构
+* user
+```
+.
+├── Dockerfile
+├── domain
+│   ├── model
+│   │   └── user.go
+│   ├── repository
+│   │   └── user_repository.go
+│   └── service
+│       └── user_data_service.go
+├── go.mod
+├── go.sum
+├── handler
+│   └── user.go
+├── main.go
+├── Makefile
+├── proto
+│   ├── user.pb.go
+│   ├── user.pb.micro.go
+│   └── user.proto
+├── README.md
+└── user
+```
 
-syntax = "proto3";
-
-package user1;
-
-option go_package = "./proto/user;user";
-
-service User{
-    rpc Register(UserRegisterRequest) returns (UserRegisterResponse){}
-    rpc Login(UserLoginRequest) returns (UserLoginResponse){}
-    rpc UserInfo(UserInfoRequest) returns (UserInfoResponse) {}
-}
-
-message UserInfoRequest{
-    int64 user_id = 1;
-}
-
-message UserInfoResponse{
-    string user_name = 1;
-    string pwd = 2;
-    string frist_name = 3; 
-}
-
-message UserRegisterRequest{
-    string user_name = 1;
-    string pwd =2;
-    string frist_name = 3;
-}
-
-message UserRegisterResponse {
-    string message = 1;
-}
-
-message UserLoginRequest {
-    string user_name = 1;
-    string pwd = 2;
-}
-
-message UserLoginResponse {
-    bool is_success = 1;
-}
+* product
+```
+.
+├── common
+│   ├── config.go
+│   ├── jaeger.go
+│   ├── mysql.go
+│   └── swap.go
+├── domain
+│   ├── model
+│   │   ├── product.go
+│   │   ├── product_image.go
+│   │   ├── product_seo.go
+│   │   └── product_size.go
+│   ├── repository
+│   │   └── product_repository.go
+│   └── service
+│       └── product_data.go
+├── go.mod
+├── go.sum
+├── handler
+│   └── product.go
+├── main.go
+├── Makefile
+├── productClient.go
+├── proto
+│   ├── product.pb.go
+│   ├── product.pb.micro.go
+│   └── product.proto
+└── README.md
+```
+* category
+```
+.
+├── common
+│   ├── config.go
+│   ├── mysql.go
+│   └── swap.go
+├── Dockerfile
+├── domain
+│   ├── model
+│   │   └── category.go
+│   ├── repository
+│   │   └── category_repository.go
+│   └── service
+│       └── category_date.go
+├── go.mod
+├── go.sum
+├── handler
+│   └── category.go
+├── main.go
+├── Makefile
+├── proto
+│   ├── category.pb.go
+│   ├── category.pb.micro.go
+│   └── category.proto
+└── README.md
 ```
