@@ -1,4 +1,4 @@
-module github.com/yumuxiaoli/web-shop-go/common
+module common
 
 go 1.18
 
