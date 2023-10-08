@@ -5,7 +5,7 @@ import (
 	"user/domain/model"
 	"user/domain/service"
 
-	user "user/proto/user"
+	user "user/proto"
 )
 
 type User struct {

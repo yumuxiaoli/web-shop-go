@@ -5,7 +5,7 @@ import (
 	"user/domain/repository"
 	sr2 "user/domain/service"
 	"user/handler"
-	pb "user/proto/user"
+	pb "user/proto"
 
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
