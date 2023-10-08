@@ -5,7 +5,7 @@ import (
 	"product/common"
 	"product/domain/model"
 	"product/domain/service"
-	"product/proto/product"
+	product "product/proto"
 )
 
 const (

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"product/common"
 	"product/handler"
-	pb "product/proto/product"
+	pb "product/proto"
 
 	"product/domain/repository"
 	sr2 "product/domain/service"

@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 	"product/common"
-	"product/proto/product"
+	product "product/proto"
 
 	"github.com/micro/go-micro/v2"
 	log "github.com/micro/go-micro/v2/logger"
