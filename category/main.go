@@ -3,7 +3,7 @@ package main
 import (
 	"category/common"
 	"category/handler"
-	pb "category/proto/category"
+	pb "category/proto"
 	"fmt"
 
 	"category/domain/repository"

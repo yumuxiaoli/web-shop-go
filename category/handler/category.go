@@ -4,7 +4,7 @@ import (
 	"category/common"
 	"category/domain/model"
 	"category/domain/service"
-	"category/proto/category"
+	category "category/proto"
 	"context"
 
 	"github.com/micro/go-micro/v2/util/log"
