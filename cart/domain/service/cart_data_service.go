@@ -1,8 +1,8 @@
 package service
 
 import (
-	"cart/domain/model"
-	"cart/domain/repository"
+	"github.com/yumuxiaoli/web-shop-go/cart/domain/model"
+	"github.com/yumuxiaoli/web-shop-go/cart/domain/repository"
 )
 
 type ICartDataService interface {

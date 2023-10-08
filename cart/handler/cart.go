@@ -1,12 +1,12 @@
 package handler
 
 import (
-	"cart/domain/model"
-	"cart/domain/service"
-	cart "cart/proto"
 	"context"
 
 	"github.com/yumuxiaoli/common"
+	"github.com/yumuxiaoli/web-shop-go/cart/domain/model"
+	"github.com/yumuxiaoli/web-shop-go/cart/domain/service"
+	cart "github.com/yumuxiaoli/web-shop-go/cart/proto"
 )
 
 type Cart struct {

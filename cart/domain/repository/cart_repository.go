@@ -1,10 +1,10 @@
 package repository
 
 import (
-	"cart/domain/model"
 	"errors"
 
 	"github.com/jinzhu/gorm"
+	"github.com/yumuxiaoli/web-shop-go/cart/domain/model"
 )
 
 type ICartRepository interface {

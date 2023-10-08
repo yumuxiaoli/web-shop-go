@@ -1,4 +1,4 @@
-module cart
+module github.com/yumuxiaoli/web-shop-go/cart
 
 go 1.18
 

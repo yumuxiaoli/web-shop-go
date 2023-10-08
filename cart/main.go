@@ -1,11 +1,9 @@
 package main
 
 import (
-	"cart/domain/repository"
-	"cart/domain/service"
-	"cart/handler"
-	pb "cart/proto"
 	"fmt"
+
+	pb "github.com/yumuxiaoli/web-shop-go/cart/proto"
 
 	"github.com/jinzhu/gorm"
 	"github.com/micro/go-micro/util/log"
@@ -18,6 +16,9 @@ import (
 	opentracing2 "github.com/micro/go-plugins/wrapper/trace/opentracing/v2"
 	"github.com/opentracing/opentracing-go"
 	"github.com/yumuxiaoli/common"
+	"github.com/yumuxiaoli/web-shop-go/cart/domain/repository"
+	"github.com/yumuxiaoli/web-shop-go/cart/domain/service"
+	"github.com/yumuxiaoli/web-shop-go/cart/handler"
 )
 
 var QPS = 100
