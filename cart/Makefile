@@ -2,9 +2,13 @@
 GOPATH:=$(shell go env GOPATH)
 .PHONY: init
 init:
-	go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
-	go install github.com/micro/micro/v3/cmd/protoc-gen-micro@latest
-	go install github.com/micro/micro/v3/cmd/protoc-gen-openapi@latest
+	@go get -u google.golang.org/protobuf/proto
+	@go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
+	@go install github.com/go-micro/generator/cmd/protoc-gen-micro@latest
+
+.PHONY: update
+update:
+	@go get -u
 
 .PHONY: api
 api:
